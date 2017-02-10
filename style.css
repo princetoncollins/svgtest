@@ -1,0 +1,105 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background: #444;
+}
+
+.container {
+	height: 400px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+button {
+	background: skyblue;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: #333;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Corbel, sans-serif;
+}
+
+#check path {
+	stroke: white;
+	stroke-width: 1px;
+	fill: transparent;
+	stroke-dasharray: 165.03076171875px;
+	stroke-dashoffset: -165.03076171875px;
+	transition: stroke-dashoffset .5s linear .6s, fill .6s ease;
+}
+
+#check.checked path {
+	stroke-dashoffset: 0px;
+	stroke: white;
+	fill: white;
+	transition: fill .5s ease .6s, stroke-dashoffset .6s linear;
+}
+
+#letter path {
+	stroke: white;
+	stroke-width: 1px;
+	fill: transparent;
+	stroke-dasharray: 182.7856903076172px;
+	stroke-dashoffset: -182.7856903076172px;
+	transition: stroke-dashoffset .5s linear .6s, fill .6s ease;
+}
+
+#letter.checkedLetterD path {
+	stroke-dashoffset: 0px;
+	stroke: #ebc0ff;
+	fill: #ebc0ff;
+	transition: fill .5s linear 4s, stroke-dashoffset 4s ease;
+}
+
+#letter.checkedLetterA path {
+	stroke-dashoffset: 0px;
+	stroke: #d5f9bf;
+	fill: #d5f9bf;
+	transition: fill .5s linear 4s, stroke-dashoffset 4s ease;
+}
+
+#letter.checkedLetterR path {
+	stroke-dashoffset: 0px;
+	stroke: #bee0ff;
+	fill: #bee0ff;
+	transition: fill .5s linear 4s, stroke-dashoffset 4s ease;
+}
+
+#letter.checkedLetterC path {
+	stroke-dashoffset: 0px;
+	stroke: #fdf99e;
+	fill: #fdf99e;
+	transition: fill .5s linear 4s, stroke-dashoffset 4s ease;
+}
+
+#letter.checkedLetterY path {
+	stroke-dashoffset: 0px;
+	stroke: #ffadad;
+	fill: #ffadad;
+	transition: fill .5s linear 4s, stroke-dashoffset 4s ease;
+}
+
+.letterY {
+	position: relative;
+	top: 39px;
+	left: -21px;
+}
+
+.letterC {
+	position: relative;
+	left: -13px;
+	top: 2px;
+}
+
+h2 {
+	color: white;
+	font-family: Corbel, sans-serif;
+}
